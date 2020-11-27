@@ -1,22 +1,24 @@
-public class Instrument {
-    private InstrumentType type;
+package instruments;
+
+public abstract class Instrument {
+    private InstrumentType instrumentType;
     private Material material;
     private Colour colour;
     private boolean requiresCase;
 
-    public Instrument(InstrumentType type, Material material, Colour colour, boolean requiresCase){
-        this.type = type;
+    public Instrument(InstrumentType instrumentType, Material material, Colour colour, boolean requiresCase){
+        this.instrumentType = instrumentType;
         this.material = material;
         this.colour = colour;
         this.requiresCase = requiresCase;
     }
 
-    public InstrumentType getType() {
-        return type;
+    public InstrumentType getInstrumentType() {
+        return instrumentType;
     }
 
-    public void setType(InstrumentType type) {
-        this.type = type;
+    public void setInstrumentType(InstrumentType type) {
+        this.instrumentType = type;
     }
 
     public Material getMaterial() {
@@ -35,7 +37,7 @@ public class Instrument {
         this.colour = colour;
     }
 
-    public boolean isRequiresCase() {
+    public boolean getRequiresCase() {
         return requiresCase;
     }
 
