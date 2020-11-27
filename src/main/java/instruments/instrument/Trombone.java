@@ -7,28 +7,16 @@ import instruments.groups.Wind;
 import instruments.groups.WindType;
 
 public class Trombone extends Wind {
-    private double buyingPrice;
-    private double sellingPrice;
 
-    public Trombone(InstrumentType instrumentType, Material material, Colour colour, boolean requiresCase, WindType windType, int noOfValves, double buyingPrice, double sellingPrice){
-        super(instrumentType, material, colour, requiresCase, windType, noOfValves);
-        this.buyingPrice = buyingPrice;
-        this.sellingPrice = sellingPrice;
+    public Trombone(InstrumentType instrumentType, Material material, Colour colour, boolean requiresCase, double buyingPrice, double sellingPrice, WindType windType, int noOfValves){
+        super(instrumentType, material, colour, requiresCase, buyingPrice, sellingPrice, windType, noOfValves);
     }
 
-    public double getBuyingPrice() {
-        return buyingPrice;
+    public String play(){
+        return "PPPPAARRROOOOOOOOOOFFFFF!";
     }
 
-    public void setBuyingPrice(double buyingPrice) {
-        this.buyingPrice = buyingPrice;
-    }
-
-    public double getSellingPrice() {
-        return sellingPrice;
-    }
-
-    public void setSellingPrice(double sellingPrice) {
-        this.sellingPrice = sellingPrice;
+    public double calcMarkup(){
+        return (this.getSellingPrice()/this.getBuyingPrice())*100;
     }
 }

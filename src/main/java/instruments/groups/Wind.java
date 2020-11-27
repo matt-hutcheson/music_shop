@@ -1,16 +1,17 @@
 package instruments.groups;
 
 import instruments.Colour;
-import instruments.Instrument;
 import instruments.InstrumentType;
 import instruments.Material;
 
-public class Wind extends Instrument {
+import instruments.Instrument;
+
+public abstract class Wind extends Instrument {
     private WindType windType;
     private int noOfValves;
 
-    public Wind(InstrumentType instrumentType, Material material, Colour colour, boolean requiresCase, WindType windType, int noOfValves){
-        super(instrumentType, material, colour, requiresCase);
+    public Wind(InstrumentType instrumentType, Material material, Colour colour, boolean requiresCase, double buyingPrice, double sellingPrice, WindType windType, int noOfValves){
+        super(instrumentType, material, colour, requiresCase, buyingPrice, sellingPrice);
         this.windType = windType;
         this.noOfValves = noOfValves;
     }

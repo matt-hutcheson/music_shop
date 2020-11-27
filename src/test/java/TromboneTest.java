@@ -12,7 +12,7 @@ public class TromboneTest {
     private Trombone trombone;
     @Before
     public void setUp(){
-        trombone = new Trombone(InstrumentType.STRING, Material.WOOD, Colour.NATURAL, true, WindType.TROMBONE, 3, 100, 300);
+        trombone = new Trombone(InstrumentType.STRING, Material.WOOD, Colour.NATURAL, true, 100, 300, WindType.TROMBONE, 3);
     }
     @Test
     public void hasType(){
@@ -85,5 +85,13 @@ public class TromboneTest {
     public void canSetSellingPrice(){
         trombone.setSellingPrice(400);
         assertEquals(400, trombone.getSellingPrice(), 0.01);
+    }
+    @Test
+    public void canPlay(){
+        assertEquals("PPPPAARRROOOOOOOOOOFFFFF!", trombone.play());
+    }
+    @Test
+    public void canCalcMarkup(){
+        assertEquals(300, trombone.calcMarkup(), 0.01);
     }
 }
