@@ -7,6 +7,7 @@ public abstract class Instrument implements ISell, IPlay {
     private boolean requiresCase;
     private double buyingPrice;
     private double sellingPrice;
+    private String stockType;
 
     public Instrument(InstrumentType instrumentType, Material material, Colour colour, boolean requiresCase, double buyingPrice, double sellingPrice){
         this.instrumentType = instrumentType;
@@ -15,6 +16,7 @@ public abstract class Instrument implements ISell, IPlay {
         this.requiresCase = requiresCase;
         this.buyingPrice = buyingPrice;
         this.sellingPrice = sellingPrice;
+        this.stockType = "Instrument";
     }
 
     public InstrumentType getInstrumentType() {
