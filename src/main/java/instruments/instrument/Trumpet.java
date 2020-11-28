@@ -6,13 +6,12 @@ import instruments.Material;
 import instruments.groups.Wind;
 import instruments.groups.WindType;
 
-public class Trombone extends Wind {
-
-    public Trombone(InstrumentType instrumentType, Material material, Colour colour, boolean requiresCase, double buyingPrice, double sellingPrice, WindType windType, int noOfValves){
+public class Trumpet extends Wind {
+    public Trumpet(InstrumentType instrumentType, Material material, Colour colour, boolean requiresCase, double buyingPrice, double sellingPrice, WindType windType, int noOfValves){
         super(instrumentType, material, colour, requiresCase, buyingPrice, sellingPrice, windType, noOfValves);
     }
 
     public String play(){
-        return "PPPPAARRROOOOOOOOOOFFFFF!";
+        return "Toot Toot!";
     }
 }

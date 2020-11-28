@@ -12,11 +12,11 @@ public class TromboneTest {
     private Trombone trombone;
     @Before
     public void setUp(){
-        trombone = new Trombone(InstrumentType.STRING, Material.WOOD, Colour.NATURAL, true, 100, 300, WindType.TROMBONE, 3);
+        trombone = new Trombone(InstrumentType.WIND, Material.BRASS, Colour.SILVER, true, 100, 300, WindType.TROMBONE, 3);
     }
     @Test
     public void hasType(){
-        assertEquals(InstrumentType.STRING, trombone.getInstrumentType());
+        assertEquals(InstrumentType.WIND, trombone.getInstrumentType());
     }
     @Test
     public void canSetType(){
@@ -25,7 +25,7 @@ public class TromboneTest {
     }
     @Test
     public void hasMaterial(){
-        assertEquals(Material.WOOD, trombone.getMaterial());
+        assertEquals(Material.BRASS, trombone.getMaterial());
     }
     @Test
     public void canSetMaterial(){
@@ -34,12 +34,12 @@ public class TromboneTest {
     }
     @Test
     public void hasColour(){
-        assertEquals(Colour.NATURAL, trombone.getColour());
+        assertEquals(Colour.SILVER, trombone.getColour());
     }
     @Test
     public void canSetColour(){
-        trombone.setColour(Colour.SILVER);
-        assertEquals(Colour.SILVER, trombone.getColour());
+        trombone.setColour(Colour.GOLD);
+        assertEquals(Colour.GOLD, trombone.getColour());
     }
     @Test
     public void hasCase__True(){
