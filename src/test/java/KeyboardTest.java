@@ -92,6 +92,6 @@ public class KeyboardTest {
     }
     @Test
     public void canCalcMarkup(){
-        assertEquals(300, keyboard.calcMarkup(), 0.01);
+        assertEquals(200, keyboard.calcMarkup(), 0.01);
     }
 }

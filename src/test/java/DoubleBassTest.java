@@ -92,6 +92,6 @@ public class DoubleBassTest {
     }
     @Test
     public void canCalcMarkup(){
-        assertEquals(300, doubleBass.calcMarkup(), 0.01);
+        assertEquals(200, doubleBass.calcMarkup(), 0.01);
     }
 }

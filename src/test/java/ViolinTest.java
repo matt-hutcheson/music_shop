@@ -93,6 +93,6 @@ public class ViolinTest {
     }
     @Test
     public void canCalcMarkup(){
-        assertEquals(300, violin.calcMarkup(), 0.01);
+        assertEquals(200, violin.calcMarkup(), 0.01);
     }
 }

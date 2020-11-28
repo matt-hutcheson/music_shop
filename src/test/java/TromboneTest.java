@@ -92,6 +92,6 @@ public class TromboneTest {
     }
     @Test
     public void canCalcMarkup(){
-        assertEquals(300, trombone.calcMarkup(), 0.01);
+        assertEquals(200, trombone.calcMarkup(), 0.01);
     }
 }

@@ -93,6 +93,6 @@ public class TrumpetTest {
     }
     @Test
     public void canCalcMarkup(){
-        assertEquals(300, trumpet.calcMarkup(), 0.01);
+        assertEquals(200, trumpet.calcMarkup(), 0.01);
     }
 }

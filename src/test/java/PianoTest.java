@@ -93,6 +93,6 @@ public class PianoTest {
     }
     @Test
     public void canCalcMarkup(){
-        assertEquals(300, piano.calcMarkup(), 0.01);
+        assertEquals(2000, piano.calcMarkup(), 0.01);
     }
 }

@@ -7,14 +7,14 @@ public class SpareString implements ISell {
     private double sellingPrice;
     private String stockType;
 
-    public SpareString(double buyingPrice, double sellingPrice, String stockType){
+    public SpareString(double buyingPrice, double sellingPrice){
         this.buyingPrice = buyingPrice;
         this.sellingPrice = sellingPrice;
-        this.stockType = stockType;
+        this.stockType = "Stock";
     }
 
     public double calcMarkup(){
-        return (sellingPrice/buyingPrice)*100;
+        return (sellingPrice-buyingPrice);
     }
 
     public double getBuyingPrice() {
