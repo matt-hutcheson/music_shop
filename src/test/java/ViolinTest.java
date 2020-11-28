@@ -61,11 +61,11 @@ public class ViolinTest {
         assertEquals(StringType.GUITAR, violin.getStringType());
     }
     @Test
-    public void hasValves(){
+    public void hasStrings(){
         assertEquals(4, violin.getNoOfStrings());
     }
     @Test
-    public void canSetValves(){
+    public void canSetStrings(){
         violin.setNoOfStrings(5);
         assertEquals(5, violin.getNoOfStrings());
     }
